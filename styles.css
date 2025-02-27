@@ -355,7 +355,7 @@ body::-webkit-scrollbar {
 }
 
 #p1_f{
-    background-image: url('../assets/p1_f.png');
+    background-image: url('./assets/p1_f.png');
 }
 
 
