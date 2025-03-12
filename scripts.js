@@ -49,12 +49,12 @@ function copiarEmail() {
     navigator.clipboard.writeText(email)
         .then(() => {
             const boton = document.getElementById("b_e");
-            boton.textContent = "¡Copiado!";
             boton.disabled = true; // Deshabilita temporalmente el botón
+            boton.style.transform = "scale(1.2)"; // Reduce el tamaño del botón
 
             setTimeout(() => {
-                boton.textContent = "E-mail"; // Restaura el texto
                 boton.disabled = false; // Habilita el botón de nuevo
+                boton.style.transform = "scale(1)"; // Reduce el tamaño del botón
             }, 2000); // Vuelve a la normalidad después de 2 segundos
         })
         .catch(err => console.error("Error al copiar: ", err));
@@ -67,9 +67,36 @@ function abrirWhatsApp() {
 
     // Muestra mensaje temporal en el botón
     boton.disabled = true;
+    boton.style.transform = "scale(1.2)"; // Reduce el tamaño del botón
 
     setTimeout(() => {
-        boton.textContent = "WhatsApp";
         boton.disabled = false;
+        boton.style.transform = "scale(1)"; // Reduce el tamaño del botón
+    }, 2000);
+}
+
+function abrirLinkedin() {
+    const linkedin_url =  "https://www.linkedin.com/in/gonzalo-gamenara-6bb130238/";
+    window.open(linkedin_url, "_blank");
+
+    boton.disabled = true;
+    boton.style.transform = "scale(1.2)"; // Reduce el tamaño del botón
+
+    setTimeout(() => {
+        boton.disabled = false;
+        boton.style.transform = "scale(1)"; // Reduce el tamaño del botón
+    }, 2000);
+}
+
+function abrirGithub() {
+    const github_url =  "https://github.com/GonzaloGamenara";
+    window.open(github_url, "_blank");
+
+    boton.disabled = true;
+    boton.style.transform = "scale(1.2)"; // Reduce el tamaño del botón
+
+    setTimeout(() => {
+        boton.disabled = false;
+        boton.style.transform = "scale(1)"; // Reduce el tamaño del botón
     }, 2000);
 }

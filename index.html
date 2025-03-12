@@ -71,11 +71,11 @@
                         </div></li>
                         <li class="proyectos"><div class="card_project">
                             <div class="front">
-                                <h1 class="project_name">Proyecto 2</h1>
+                                <h1 class="project_name">Gamelitics</h1>
                                 <div class="used_icons"></div>
                             </div>
                             <div class="back">
-                                <p class="resume">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi eum consequatur vel hic autem perferendis numquam eos porro rerum corporis exercitationem aliquam soluta dolorum sint quisquam magnam nisi, ipsam nesciunt?</p>
+                                <p class="resume">En este proyecto, desarrollé una base de datos propia en SQLite, donde almacené y limpié información de más de 350,000 videojuegos extraídos de la API RAWG (1990-2025). Utilicé herramientas como Pandas, Matplotlib y Seaborn para el análisis y visualización de datos, y apliqué Machine Learning para predecir el éxito de futuros títulos mediante la identificación de tendencias en la industria.</p>
                                 <button class="go">Probar</button>
                             </div>
                         </div></li>
@@ -106,14 +106,10 @@
             <section class="con_section" id="Contacto">
                 <h2 class="titulo_contacto">¿Quieres que trabajemos juntos? Contactame </h2>
                 <div class="contenedor_botones">
-                    <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
-                    <i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i>
-                    <i class="fa-brands fa-linkedin" style="color: #ffffff;"></i>
-                    <i class="fa-brands fa-github" style="color: #ffffff;"></i>
-                    <button onclick="copiarEmail()" id="b_e" class="b_con">E-Mail</button>
-                    <button onclick="abrirWhatsApp()" id="b_w" class="b_con">WhatsApp</button>
-                    <a href="https://www.linkedin.com/in/gonzalo-gamenara-6bb130238/" target="_blank"><button id="b_l" class="b_con">Linkedin</button></a>
-                    <a href="https://github.com/GonzaloGamenara" target="_blank"><button id="b_l" class="b_con">GitHub</button></a>
+                    <i onclick="copiarEmail()" id="b_e" class="fa-solid fa-envelope" style="color: #ffffff;"></i>
+                    <i onclick="abrirWhatsApp()" id="b_w" class="fa-brands fa-whatsapp" style="color: #ffffff;"></i>
+                    <i onclick="abrirLinkedin()" class="fa-brands fa-linkedin" style="color: #ffffff;"></i>
+                    <i onclick="abrirGithub()" class="fa-brands fa-github" style="color: #ffffff;"></i>
                 </div>
             </section>
         </main>
