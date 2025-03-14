@@ -26,20 +26,20 @@ function colorSwitch(){
 
 
 
-    if(!darkmode){
+    if(darkmode){
         document.documentElement.style.setProperty("--color-fondo", "#34495E");
         document.documentElement.style.setProperty("--color-ventanas", "#2C3E50");
         document.documentElement.style.setProperty("--color-texto", "#F4F4F4");
         document.getElementById("sun").style.display="block";
         document.getElementById("moon").style.display="none";
-        darkmode = true;
+        darkmode = false;
     }else{
-        document.documentElement.style.setProperty("--color-fondo", "#ffc8b4");
-        document.documentElement.style.setProperty("--color-ventanas", "#dfbda5");
-        document.documentElement.style.setProperty("--color-texto", "#5b5365");
+        document.documentElement.style.setProperty("--color-fondo", "white");
+        document.documentElement.style.setProperty("--color-ventanas", "grey");
+        document.documentElement.style.setProperty("--color-texto", "black");
         document.getElementById("sun").style.display="none";
         document.getElementById("moon").style.display="block";
-        darkmode=false;
+        darkmode=true;
     }
 }
 

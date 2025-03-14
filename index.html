@@ -18,12 +18,17 @@
                     <li><a href="#Home"> Home</a></li>
                     <li><a href="#Sobremi">Sobre mi</a> </li>
                     <li><a href="#Proyectos"> Proyectos</a></li>
+                    <li><a href="#Habilidades">Habilidades</a></li>
+                    <li><a href="#Certificados">Certificados</a></li>
                     <li><a href="#Contacto">Contacto</a></li>
+                    <li>
+                        <button onclick="colorSwitch()" class="ch_button" aria-label="Cambiar al modo Oscuro">
+                            <i id="sun" class="fa-solid fa-sun"></i>
+                            <i id="moon" class="fa-solid fa-moon"></i>
+                        </button>
+                    </li>
                 </ul>
-                <button onclick="colorSwitch()" class="ch_button" aria-label="Cambiar al modo Oscuro">
-                    <i id="sun" class="fa-solid fa-sun" style="color: #F4F4F4;"></i>
-                    <i id="moon" class="fa-solid fa-moon" style="color: #5b5365;"></i>
-                </button>
+
             </nav>
         </header>
         <main class="main" id="Home">
@@ -35,10 +40,10 @@
                     <h2 class="estudiando">Estudiante de Licenciatura en Desarrollo de Software</h2>
                 </div>
                 <p class="sobremi">
-                    Soy un apasionado desarrollador junior en busca de mi primera oportunidad laboral en el mundo de la tecnología, donde pueda aportar valor y seguir aprendiendo.
-                    Tengo conocimientos en Backend, trabajando con <span class="python1">Python</span>, <span class="sql">SQL</span>, <span class="mysql">MySQL</span> y <span class="postgre">PostgreSQL</span>. Actualmente, estoy aprendiendo <span class="django">Django</span> y <span class="mongo">MongoDB</span>. En Frontend, manejo <span class="html">HTML</span>, <span class="css">CSS</span> y <span class="js">JavaScript</span>, y estoy explorando <span class="react">React</span> para mejorar mis habilidades.
-                    En cuanto al Análisis de Datos, utilizo <span class="python2">Python</span> junto con bibliotecas como <span class="numpy">NumPy</span>, <span class="pandas">Pandas</span>, <span class="matplo">Matplotlib</span> y <span class="sea">Seaborn</span>. Además, me desenvuelvo con herramientas como <span class="git">Git</span>, <span class="github">GitHub</span> y <span class="work">MySQL Workbench</span>.
-                    Estoy listo para asumir desafíos y contribuir en equipos dinámicos con entusiasmo y compromiso.
+                    Desarrollo Backend con <span class="python1">Python</span>, <span class="sql">SQL</span>, <span class="mysql">MySQL</span> y <span class="postgre">PostgreSQL</span>, con conocimientos en <span class="django">Django</span> y <span class="mongo">MongoDB</span>.  
+                    En Frontend, experiencia con <span class="html">HTML</span>, <span class="css">CSS</span> y <span class="js">JavaScript</span>, explorando <span class="react">React</span>.  
+                    Para Análisis de Datos, manejo <span class="python2">Python</span> junto con <span class="numpy">NumPy</span>, <span class="pandas">Pandas</span>, <span class="matplo">Matplotlib</span> y <span class="sea">Seaborn</span>.  
+                    También utilizo herramientas como <span class="git">Git</span>, <span class="github">GitHub</span> y <span class="work">MySQL Workbench</span>.  
                 </p>
             </section>
             
@@ -47,10 +52,8 @@
                     <div id="div_proyectos">
                         <div class="div_titulo_proyectos">
                             <i id="carp_icon" class="fa-solid fa-folder-open"></i>
-                            <h2 id="h2_proyectos">Mis Proyectos mas importantes!</h2>
+                            <h2 id="h2_proyectos">Mis Proyectos mas importantes</h2>
                         </div>
-
-                        
                     </div>
                     <ul id="lista_proyectos">
                         <li class="proyectos"><div class="card_project">
@@ -60,23 +63,43 @@
                                     <i id="tec_icon" class="fa-brands fa-html5"></i>
                                     <i id="tec_icon" class="fa-brands fa-css3-alt"></i>
                                     <i id="tec_icon" class="fa-brands fa-js"></i>
+                                    <i id="tec_icon" class="fa-brands fa-node-js"></i>
                                 </div>
                             </div>
                             <div id="p1_b" class="back">
                                 <p class="resume">Un proyecto interactivo donde puedes navegar entre sistemas solares y galaxias, usando datos reales de la NASA. Creado con HTML, CSS y JavaScript, consume la API de la NASA para mostrar información detallada y visualizaciones de planetas y cuerpos celestes, todo sin recargar la página. Una experiencia dinámica y educativa para explorar el universo.</p>
-                                <a href="https://stellar-sights.netlify.app">
-                                    <button class="go" >Probar</button>
-                                </a>
+                                <div class="contenedor_botones_back">
+                                    <a class="a_go" href="https://stellar-sights.netlify.app" target="_blank">
+                                        <button class="go" >Probar</button>
+                                    </a>
+                                    <a class="a_go" href="" target="_blank">
+                                        <button class="go">Repositorio</button>
+                                    </a>
+                                </div>
                             </div>
                         </div></li>
                         <li class="proyectos"><div class="card_project">
                             <div class="front">
                                 <h1 class="project_name">Gamelitics</h1>
-                                <div class="used_icons"></div>
+                                <div class="used_icons">
+                                    <i id="tec_icon" class="fa-brands fa-python"></i>
+                                    <img class="tec_img" src="assets/pandas.svg" alt="Pandas Logo">
+                                    <img class="tec_img" src="assets/numpy.svg" alt="NumPy Logo">
+                                    <img class="tec_img" src="assets/seaborn.svg" alt="Seaborn Logo">
+                                    <img class="tec_img" src="assets/plotly.svg" alt="Plotly Logo">
+                                    <img class="tec_img" src="assets/matplotlib.svg" alt="Matplotlibsv Logo">
+                                </div>
                             </div>
                             <div class="back">
                                 <p class="resume">En este proyecto, desarrollé una base de datos propia en SQLite, donde almacené y limpié información de más de 350,000 videojuegos extraídos de la API RAWG (1990-2025). Utilicé herramientas como Pandas, Matplotlib y Seaborn para el análisis y visualización de datos, y apliqué Machine Learning para predecir el éxito de futuros títulos mediante la identificación de tendencias en la industria.</p>
-                                <button class="go">Probar</button>
+                                <div class="contenedor_botones_back">
+                                    <a class="a_go" href="https://stellar-sights.netlify.app" target="_blank">
+                                        <button class="go" >Probar</button>
+                                    </a>
+                                    <a class="a_go" href="https://github.com/GonzaloGamenara/gamelitics" target="_blank">
+                                        <button class="go">Repositorio</button>
+                                    </a>
+                                </div>
                             </div>
                         </div></li>
                         <li class="proyectos"><div class="card_project">
@@ -86,7 +109,14 @@
                             </div>
                             <div class="back">
                                 <p class="resume">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero, vero tenetur consectetur voluptatibus optio beatae deleniti ut dolorem repellendus dolor impedit numquam aspernatur, provident dolorum, placeat consequatur necessitatibus repellat? Ab?</p>
-                                <button class="go">Probar</button>
+                                <div class="contenedor_botones_back">
+                                    <a class="a_go" href="https://stellar-sights.netlify.app" target="_blank">
+                                        <button class="go" >Probar</button>
+                                    </a>
+                                    <a class="a_go" href="" target="_blank">
+                                        <button class="go">Repositorio</button>
+                                    </a>
+                                </div>
                             </div>
                         </div></li>
                         <li class="proyectos"><div class="card_project">
@@ -96,20 +126,128 @@
                             </div>
                             <div class="back">
                                 <p class="resume">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut autem sapiente sit blanditiis ut soluta expedita maiores odit. Tenetur, reiciendis! Laudantium iste libero molestias quibusdam quae. Illum quidem nisi beatae?</p>
-                                <button class="go">Probar</button>
+                                <div class="contenedor_botones_back">
+                                    <a class="a_go" href="https://stellar-sights.netlify.app" target="_blank">
+                                        <button class="go" >Probar</button>
+                                    </a>
+                                    <a class="a_go" href="" target="_blank">
+                                        <button class="go">Repositorio</button>
+                                    </a>
+                                </div>
                             </div>
                         </div></li>
                     </ul>
-                    <a href="https://github.com/GonzaloGamenara/Proyectos" target="_blank"><button class="boton_mostrar_todos"> Repositorio</button></a>
+                    <a id="Habilidades" href="https://github.com/GonzaloGamenara/Proyectos" target="_blank"><button class="boton_mostrar_todos"> Repositorio completo</button></a>
+                </div>
+            </section>
+            <section class="h_section">
+                <div class="div_habilidades">
+                    <div class="div_titulo_habilidades">
+                        <i id="h_ico" class="fa-solid fa-network-wired"></i>
+                        <h2  class="h2_habilidades">Habilidades</h2>
+                    </div>
+                </div>
+                <div class="habilidades">
+                    <ul class="habilidades_lista">
+                        <li>
+                            <div class="habilidades_subtitulos">
+                                <i class="fa-solid fa-code"></i>
+                                <h3 class="h3_habilidades">Desarrollo Web</h3>
+                            </div>
+                            <p class="habilidades_p">HTML, CSS, JavaScript, Django, Flask</p>
+                        </li>
+                        <li>
+                            <div class="habilidades_subtitulos">
+                                <i class="fa-solid fa-database"></i>
+                                <h3 class="h3_habilidades">Bases de Datos</h3>
+                            </div>
+                            <p class="habilidades_p">SQL, MySQL, PostgreSQL, SQLite</p>
+                        </li>
+                        <li>
+                            <div class="habilidades_subtitulos">
+                                <i class="fa-solid fa-chart-line"></i>
+                                <h3 class="h3_habilidades">Análisis de Datos</h3>
+                            </div>
+                            <p class="habilidades_p">Python, NumPy, Pandas, Matplotlib, Seaborn, Machine Learning</p>
+                        </li>
+                        <li>
+                            <div class="habilidades_subtitulos">
+                                <i class="fa-solid fa-tools"></i>
+                                <h3 class="h3_habilidades">Herramientas</h3>
+                            </div>
+                            <p class="habilidades_p">Git, GitHub, MySQL Workbench, Visual Studio Code </p>
+                        </li>
+                        <li>
+                            <div class="habilidades_subtitulos">
+                                <i class="fa-solid fa-users"></i>
+                                <h3 class="h3_habilidades">Trabajo en Equipo</h3>
+                            </div>
+                            <p class="habilidades_p">Colaboración, Comunicación, Resolución de Problemas</p>
+                        </li>
+                        <li>
+                            <div class="habilidades_subtitulos">
+                                <i class="fa-solid fa-language"></i>
+                                <h3 class="h3_habilidades">Idiomas</h3>
+                            </div>
+                            <p class="habilidades_p"> 
+                                <img class="flag_img" src="assets/argentina.png" alt="Bandera Argentina Logo"> Español (Nativo) 
+                                <img class="flag_img" src="assets/estados-unidos.png" alt="Bandera Estados Unidos Logo"> Ingles (B1)
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section id="Certificados" class="c_section">
+                <div class="div_certificados">
+                    <div class="div_titulo_certificados">
+                        <i id="c_ico" class="fa-solid fa-certificate"></i>
+                        <h2 class="h2_certificados">Certificados</h2>
+                </div>
+                </div>
+                <div class="certificados">
+                    <ul class="certificados_lista">
+                        <li>
+                            <div class="titulo_certificado">
+                                <i class="fa-solid fa-certificate"></i>
+                                <h3 class="h3_certificados">Data Analytics</h3>
+                            </div>
+                            <h4 class="h4_certificados">CoderHouse - 2025</h4>
+                            <img class="img_certificados" src="assets/cer_2.png" alt="Certificado de Data Analytics">
+                            <a href="" target="_blank"><button class="boton_certificado">Ver Certificado</button></a>
+                        </li>
+                        <li>
+                            <div class="titulo_certificado">
+                                <i class="fa-solid fa-certificate"></i>
+                                <h3 class="h3_certificados">Responsive Web Design</h3>
+                            </div>
+                            <h4 class="h4_certificados">FreeCodeCamp - 2024</h4>
+                            <img class="img_certificados" src="assets/cer_2.png" alt="Certificado de Data Analytics">
+                            <a href="https://www.freecodecamp.org/certification/GonzaloGamenara/responsive-web-design" target="_blank"><button class="boton_certificado">Ver Certificado</button></a>
+                        </li>
+                        <li>
+                            <div class="titulo_certificado">
+                                <i class="fa-solid fa-certificate"></i>
+                                <h3 class="h3_certificados" id="h3_scientific">Scientific Computing with Python</h3>
+                            </div>
+                            <h4 class="h4_certificados">FreeCodeCamp - 2024</h4>
+                            <img class="img_certificados" src="assets/cer_3.png" alt="Certificado de Data Analytics">
+                            <a href="https://www.freecodecamp.org/certification/GonzaloGamenara/scientific-computing-with-python-v7" target="_blank"><button class="boton_certificado">Ver Certificado</button></a>
+                        </li>
+                    </ul>
                 </div>
             </section>
             <section class="con_section" id="Contacto">
-                <h2 class="titulo_contacto">¿Quieres que trabajemos juntos? Contactame </h2>
+                <div id="div_contacto">
+                    <div class="div_titulo_contacto">
+                        <i id="cont_ico" class="fa-solid fa-address-card"></i>
+                        <h2 class="h2_contacto">¿Quieres que trabajemos juntos? Contactame! </h2>
+                    </div>
+                </div>
                 <div class="contenedor_botones">
-                    <i onclick="copiarEmail()" id="b_e" class="fa-solid fa-envelope" style="color: #ffffff;"></i>
-                    <i onclick="abrirWhatsApp()" id="b_w" class="fa-brands fa-whatsapp" style="color: #ffffff;"></i>
-                    <i onclick="abrirLinkedin()" class="fa-brands fa-linkedin" style="color: #ffffff;"></i>
-                    <i onclick="abrirGithub()" class="fa-brands fa-github" style="color: #ffffff;"></i>
+                    <i onclick="copiarEmail()" id="b_e" class="fa-solid fa-envelope"></i>
+                    <i onclick="abrirWhatsApp()" id="b_w" class="fa-brands fa-whatsapp"></i>
+                    <i onclick="abrirLinkedin()" id="b_l"  class="fa-brands fa-linkedin"></i>
+                    <i onclick="abrirGithub()" id="b_g" class="fa-brands fa-github"></i>
                 </div>
             </section>
         </main>
