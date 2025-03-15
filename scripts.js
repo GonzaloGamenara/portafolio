@@ -34,9 +34,9 @@ function colorSwitch(){
         document.getElementById("moon").style.display="none";
         darkmode = false;
     }else{
-        document.documentElement.style.setProperty("--color-fondo", "white");
-        document.documentElement.style.setProperty("--color-ventanas", "grey");
-        document.documentElement.style.setProperty("--color-texto", "black");
+        document.documentElement.style.setProperty("--color-fondo", "#F5F5F5");
+        document.documentElement.style.setProperty("--color-ventanas", "#FFFFFF");
+        document.documentElement.style.setProperty("--color-texto", "#333333");
         document.getElementById("sun").style.display="none";
         document.getElementById("moon").style.display="block";
         darkmode=true;
@@ -48,14 +48,30 @@ function copiarEmail() {
     const email = "gonzagamenara@gmail.com";
     navigator.clipboard.writeText(email)
         .then(() => {
-            const boton = document.getElementById("b_e");
-            boton.disabled = true; // Deshabilita temporalmente el botón
-            boton.style.transform = "scale(1.2)"; // Reduce el tamaño del botón
+            const p = document.getElementById("p_contacto_email");
+            const ico = document.getElementById("i_email");
+            ico.style.display = "none"; // Oculta el ícono de copiar
+            p.textContent = "Copiado"; // Cambia el texto del botón
+            
+            setTimeout(() => {
+                p.textContent = "E-Mail"; // Cambia el texto del botón
+                ico.style.display = "block"; // Muestra el ícono de copiar
+            }, 2000); // Vuelve a la normalidad después de 2 segundos
+        })
+        .catch(err => console.error("Error al copiar: ", err));
+}
+
+function copiarEmail_Chico() {
+    const email = "gonzagamenara@gmail.com";
+    navigator.clipboard.writeText(email)
+        .then(() => {
+            const ico_c = document.getElementById("i_email_chico");
+            ico_c.style.transform = "scale(1.2)";
+            alert("Email copiado!");
 
             setTimeout(() => {
-                boton.disabled = false; // Habilita el botón de nuevo
-                boton.style.transform = "scale(1)"; // Reduce el tamaño del botón
-            }, 2000); // Vuelve a la normalidad después de 2 segundos
+                ico_c.style.transform = "scale(1.0)"; 
+            }, 1000); 
         })
         .catch(err => console.error("Error al copiar: ", err));
 }
