@@ -385,12 +385,14 @@ body::-webkit-scrollbar {
     background-image: url("https://ncube.com/wp-content/uploads/2020/02/shutterstock_1134885563-1.jpg");
 }
 
-#p3_f{
-    
+#p3_f {
+    background-image: url("./assets/letterflix.png");
+    background-size: fill;
+    background-position: left;
 }
 
 #p4_f{
-    
+    background-image: url("./assets/quizzer.png");
 }
 
 #p1_b{
@@ -401,12 +403,12 @@ body::-webkit-scrollbar {
     background-image:url("https://img.freepik.com/free-vector/neon-grid-background_53876-91657.jpg?t=st=1742006509~exp=1742010109~hmac=7a64712a856dec7bb458337b1f9c6544784aa8ce2fba38bd30349a0f19981691&w=996");
 }
 
-#p3_b{
-    
+#p3_b {
+    background: linear-gradient(to bottom, black 80%, rgb(11, 65, 9));
 }
 
 #p4_b{
-    
+    background: linear-gradient(to bottom, black 80%, rgb(65, 9, 9));
 }
 
 
